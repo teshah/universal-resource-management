@@ -68,3 +68,8 @@ When stabilizing or optimizing any system:
 ```
 
 ---
+
+---
+
+## Reference Documents
+* **[	erms_and_glossary.md](terms_and_glossary.md):** Complete glossary of all 28+ scientific terms, behavioral neuroscience models, and decision-theoretic principles.
