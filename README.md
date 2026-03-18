@@ -71,5 +71,15 @@ When stabilizing or optimizing any system:
 
 ---
 
+## 5. The Role of Values (The Objective Function)
+
+Resources are the fuel, allocation principles are the engine, but **values are the Objective Function (GPS)**.
+* Values define what "Return on Investment" actually means.
+* Values remove guilt and ambiguity from opportunity cost, turning "no" into an act of integrity.
+* Alignment with core values lowers friction and cognitive dissonance, reducing the willpower needed to act.
+
+---
+
 ## Reference Documents
+* **[objective_function.md](objective_function.md):** Deep dive on the mathematical origin of the Objective Function (Dantzig / Project SCOOP), the Optimization Triad, cross-disciplinary equivalents (Loss, Fitness, Utility), and the **The Part vs. The Whole** universal taxonomy (Local vs. Global Optima, "Club vs. Country" in corporate silos).
 * **[	erms_and_glossary.md](terms_and_glossary.md):** Complete glossary of all 28+ scientific terms, behavioral neuroscience models, and decision-theoretic principles.
