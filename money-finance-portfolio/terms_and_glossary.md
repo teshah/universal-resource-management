@@ -30,7 +30,36 @@ A dedicated lexicon of financial metrics, tax engineering mechanisms, behavioral
 
 ---
 
-## 2. Behavioral Finance & Risk
+## 2. Portfolio Risk & Volatility Metrics
+
+### Standard Deviation ($\sigma$) (Total Volatility)
+* **Definition:** The statistical dispersion of investment returns around their arithmetic mean over a specific time horizon.
+* **Interpretation:** Measures total historical volatility. Higher standard deviation indicates wider swings between peak gains and deep troughs.
+
+### Maximum Drawdown (MDD) (The "Pain" Metric)
+* **Definition:** The maximum observed percentage decline from a portfolio's historical peak to its subsequent trough before a new peak is attained.
+* **Significance:** Measures psychological endurance. Most investors abandon strategies not because of low average long-term returns, but when MDD exceeds their emotional tolerance threshold (e.g., S&P 500 MDD was $-55\%$ during the 2008 GFC).
+
+### Sharpe Ratio
+* **Definition:** A metric of risk-adjusted excess return developed by Nobel laureate William Sharpe:
+  $$\text{Sharpe} = \frac{R_p - R_f}{\sigma_p}$$
+* **Interpretation:** Evaluates how much excess return is earned per unit of *total* volatility. Ratios $> 1.0$ indicate good risk efficiency; $> 2.0$ indicate exceptional performance.
+
+### Sortino Ratio
+* **Definition:** A modification of the Sharpe ratio that penalizes **only downside deviation** ($\sigma_d$) rather than total volatility:
+  $$\text{Sortino} = \frac{R_p - R_f}{\sigma_d}$$
+* **Why It Matters:** Investors do not fear upward volatility (unexpected surges in price); they only fear downside drops (losses). The Sortino ratio avoids unfairly penalizing strategies with high positive variance.
+
+### Value at Risk (VaR)
+* **Definition:** A statistical technique quantifying the maximum expected loss over a defined time horizon at a specified confidence level (e.g., 95% confidence that monthly losses will not exceed \$50,000).
+
+### Conditional Value at Risk (CVaR / Expected Shortfall)
+* **Definition:** The expected average loss given that a tail event *beyond* the VaR threshold has occurred.
+* **Why It Matters:** Answers the critical survival question: *"When our 95% risk model breaks down and the 5% disaster strikes, what is the average severity of the crash?"*
+
+---
+
+## 3. Behavioral Finance & Structural Risks
 
 ### The Behavior Gap (Dalbar QAIB)
 * **Definition:** The quantified spread between the published returns of an investment fund and the actual, lower returns captured by the average investor in that fund.
@@ -42,9 +71,15 @@ A dedicated lexicon of financial metrics, tax engineering mechanisms, behavioral
 ### Sequence of Returns Risk (SRR)
 * **Definition:** The devastating impact of experiencing a bear market in the earliest years of retirement when the portfolio is actively distributing cash. Liquidating depressed equities locks in permanent losses, dramatically accelerating portfolio depletion.
 
+### Longevity Risk
+* **Definition:** The actuarial risk that a retiree outlives their financial assets due to extended lifespan, healthcare breakthroughs, or inadequate accumulation.
+
+### Purchasing Power (Inflation) Risk
+* **Definition:** The insidious, compounding erosion of real purchasing power caused by holding excessive allocations in fixed cash equivalents over multi-decade retirements. At 3% annual inflation, money loses over 55% of its real purchasing power across 30 years.
+
 ---
 
-## 3. Tax Engineering & Structural Alpha
+## 4. Tax Engineering & Structural Alpha
 
 ### Asset Location (Tax Arbitrage)
 * **Definition:** The strategic distribution of investments across different tax accounts based on their tax characteristics:
@@ -72,7 +107,7 @@ A dedicated lexicon of financial metrics, tax engineering mechanisms, behavioral
 
 ---
 
-## 4. Portfolio Architecture & Optimization
+## 5. Portfolio Architecture & Optimization
 
 ### Tolerance Band Rebalancing
 * **Definition:** Rebalancing asset allocations only when an asset class deviates beyond a predetermined mathematical boundary (e.g., $\pm 5\%$) rather than on arbitrary calendar dates.
@@ -93,7 +128,7 @@ A dedicated lexicon of financial metrics, tax engineering mechanisms, behavioral
 
 ---
 
-## 5. Epistemic & Methodological Comparison
+## 6. Epistemic & Methodological Comparison
 
 ### Deterministic Biomechanics vs. Stochastic Econometrics
 * **Deterministic (Hard Physical Science):** Governed by invariant laws of Newtonian physics and biological tissue limits. Testing spinal shear force on human specimens yields reproducible failure limits (e.g., Dr. Stuart McGill's spine research).
